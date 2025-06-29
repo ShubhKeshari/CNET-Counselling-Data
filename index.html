@@ -377,17 +377,6 @@
             
             subTitle.textContent = `Select Counselling Round for ${courseTitles[course]}`;
             subButtons.classList.add('show');
-            
-            // Smooth scroll to sub-buttons
-            setTimeout(() => {
-                const elementPosition = subButtons.offsetTop;
-                const offsetPosition = elementPosition - 50;
-                
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }, 200);
         }
 
         function navigateToPage(round) {
